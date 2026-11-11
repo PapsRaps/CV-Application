@@ -1,0 +1,82 @@
+.displayContainer{
+    background-color: var(--form-background-color);
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    overflow: auto;
+
+    overflow-wrap: break-word;
+
+    @media (max-width: 650px){
+        width: 300px
+    }
+}
+
+.displayContainer h2{
+    color: var(--main-text-color);
+    font-size: 1.5rem;
+}
+
+.personalInfoDisplay{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+svg{
+    margin-right: 10px;
+}
+
+.personalInfoDisplay h3{
+    color: var(--main-text-color);
+    font-size: 2rem;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.educationalBackgroundDisplay, .practicalExperienceDisplay{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.educationalBackgroundDisplay h4, .practicalExperienceDisplay h4{
+    color: var(--main-text-color);
+    font-size: 1.3rem;
+}
+
+.schoolDisplay, .expDisplay{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.school, .role{
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--main-text-color);
+}
+
+.course, .schoolYear, .company, .roleDesc, .roleYear{
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+}
+
+.schoolYear, .roleYear{
+    font-style: italic;
+}
